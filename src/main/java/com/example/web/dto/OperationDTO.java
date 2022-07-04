@@ -2,6 +2,7 @@ package com.example.web.dto;
 
 import com.example.web.constants.OperationType;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -10,7 +11,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@SuperBuilder
 public class OperationDTO {
 
     OperationType type;
